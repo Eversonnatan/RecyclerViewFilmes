@@ -38,6 +38,8 @@ public class MyAdapter  extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        holder.idTituloFilmes.setText(listFilmes.get(position).getTitulo());
+        holder.idImgFilmes.setImageResource(listFilmes.get(position).getImagem());
 
     }
 
