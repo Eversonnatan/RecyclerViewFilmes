@@ -4,12 +4,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.google.android.material.appbar.MaterialToolbar;
 
 public class ApresentaFilmeActivity extends AppCompatActivity {
     TextView mTitulo , mCategoria, mDescricao;
     Button btnVoltar;
+
+    MaterialToolbar idTolbar;
 
 
     ImageView mImagem;
@@ -23,6 +29,22 @@ public class ApresentaFilmeActivity extends AppCompatActivity {
         mDescricao = findViewById(R.id.mDescricao);
         mImagem = findViewById(R.id.mImageFilme);
         btnVoltar = findViewById(R.id.btnVoltar);
+        idTolbar = findViewById(R.id.idTolbar);
+
+        //clique no botão tolbar
+        idTolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        idTolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+             startActivity(new Intent(getApplicationContext(),MainActivity.class));     ;
+            }
+        });
 
         //decalrando intent para receber valor
         Intent intent = getIntent();

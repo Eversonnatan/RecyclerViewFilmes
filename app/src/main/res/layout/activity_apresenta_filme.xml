@@ -7,17 +7,25 @@
     android:orientation="vertical"
     tools:context=".ApresentaFilmeActivity">
 
+   <com.google.android.material.appbar.MaterialToolbar
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/idTolbar"
+       app:navigationIcon="@drawable/baseline_arrow_circle_left_"
+       style="@style/Widget.MaterialComponents.Toolbar.Primary"
+       />
+
    <TextView
-       android:textAllCaps="true"
        android:id="@+id/mTituloFilme"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:layout_gravity="center_horizontal"
-       android:layout_marginBottom="10sp"
        android:layout_marginTop="20sp"
+       android:layout_marginBottom="10sp"
        android:shadowColor="#000"
        android:shadowDy="5"
        android:text="Jesus de Nazare"
+       android:textAllCaps="true"
        android:textColor="#F10000"
        android:textSize="30sp"
        android:textStyle="bold"
@@ -33,104 +41,108 @@
        android:src="@drawable/jesus" />
 
    <LinearLayout
-      android:layout_marginTop="10dp"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-      android:layout_marginBottom="5dp"
-      android:gravity="center_horizontal"
-      android:orientation="horizontal">
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="5dp"
+       android:gravity="center_horizontal"
+       android:orientation="horizontal">
 
       <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-         android:layout_gravity="center_horizontal"
-         android:text="Categoria:"
-         android:textColor="#000"
-         android:textSize="20sp"
-         android:textStyle="bold"/>
+          android:layout_gravity="center_horizontal"
+          android:text="Categoria:"
+          android:textColor="#000"
+          android:textSize="20sp"
+          android:textStyle="bold" />
 
       <TextView
-         android:id="@+id/mCategoria"
+          android:id="@+id/mCategoria"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-         android:layout_gravity="center_horizontal"
-         android:layout_marginLeft="10sp"
-         android:text="Religioso / Histórico"
-         android:textColor="#000"
-         android:textSize="20sp"/>
+          android:layout_gravity="center_horizontal"
+          android:layout_marginLeft="10sp"
+          android:text="Religioso / Histórico"
+          android:textColor="#000"
+          android:textSize="20sp" />
 
    </LinearLayout>
+
    <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-      android:layout_margin="5dp"
-      android:layout_gravity="center_horizontal"
-      android:orientation="horizontal">
+       android:layout_gravity="center_horizontal"
+       android:layout_margin="5dp"
+       android:orientation="horizontal">
 
       <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-         android:layout_gravity="center_horizontal"
+          android:layout_gravity="center_horizontal"
 
-         android:text="Descrição"
-         android:textColor="#000"
-         android:textSize="20sp"
-         android:textStyle="bold"/>
+          android:text="Descrição"
+          android:textColor="#000"
+          android:textSize="20sp"
+          android:textStyle="bold" />
 
       <TextView
-         android:id="@+id/mDescricao"
+          android:id="@+id/mDescricao"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-         android:layout_gravity="center_horizontal"
-         android:layout_marginLeft="10sp"
-         android:text="Descrição"
-         android:textColor="#000"
-         android:textSize="20sp"/>
+          android:layout_gravity="center_horizontal"
+          android:layout_marginLeft="10sp"
+          android:text="Descrição"
+          android:textColor="#000"
+          android:textSize="20sp" />
    </LinearLayout>
+
    <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
-      android:layout_margin="5dp"
-      android:layout_gravity="center_horizontal"
-      android:orientation="horizontal">
+       android:layout_gravity="center_horizontal"
+       android:layout_margin="5dp"
+       android:orientation="horizontal">
 
       <RatingBar
           style="@style/Widget.AppCompat.RatingBar.Indicator"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-         android:numStars="1"/>
+          android:numStars="1" />
+
       <TextView
-          android:layout_marginTop="5sp"
           android:id="@+id/mPontuacao"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_gravity="center_horizontal"
           android:layout_marginLeft="5sp"
+          android:layout_marginTop="5sp"
           android:layout_marginRight="50sp"
           android:text="5.0"
           android:textColor="#000"
           android:textSize="20sp" />
 
       <ImageView
-          android:layout_margin="5dp"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
+          android:layout_margin="5dp"
           android:src="@drawable/baseline_favorite" />
 
       <ImageView
-          android:layout_margin="5dp"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
+          android:layout_margin="5dp"
           android:src="@drawable/baseline_share" />
 
    </LinearLayout>
+
    <Button
-       android:layout_margin="5dp"
        android:id="@+id/btnVoltar"
        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:layout_gravity="center_horizontal"
+       android:layout_margin="5dp"
        android:text="Voltar" />
 
 </LinearLayout>
